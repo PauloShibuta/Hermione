@@ -5,7 +5,7 @@ Hermione - Sistema de Gerenciamento do Locação de Ferramentas
 Desenvolvimento em Python/Sqlite3
 Douglas/Marco/Mateus/Paulo/Theo
 
----------------------------------------------------------------
+*---------------------------------------------------------------*
 
 ## Links:
 

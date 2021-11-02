@@ -6,6 +6,7 @@ Desenvolvimento em Python/Sqlite3
 Douglas/Marco/Mateus/Paulo/Theo
 
 
+
 ## Links:
 
 [python-decouple](https://github.com/henriquebastos/python-decouple)

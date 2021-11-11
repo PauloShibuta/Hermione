@@ -15,7 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls.static import static
+#from django.conf.urls import urls
+from django.views.static import serve
+from django.conf import settings
+from cliente.views import index, cliente, criar_clientes, editar, excluir
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('index/', index, name = 'index'),
+    path('cliente/', cliente, name = 'cliente'),
+    path('criar_clientes/', criar_clientes, name = 'criar_clientes'),
+    path('editar/<int:id>', editar, name = 'editar'),    
+    path('excluir/<int:id>', excluir, name = 'excluir'),    
 ]

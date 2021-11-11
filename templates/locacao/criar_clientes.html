@@ -1,0 +1,13 @@
+{% extends "locacao/base.html"%}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="container col-lg-5">
+	<form action="." method="POST" enctype="multipart/form-data">	
+		{% csrf_token %}
+		{{ form | crispy }}
+		<input type="submit" value="Salvar" class="input-group btn btn-success">
+	</form>
+</div>
+
+{% endblock content %}

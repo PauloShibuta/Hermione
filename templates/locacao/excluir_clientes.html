@@ -1,0 +1,11 @@
+{% extends "locacao/baselista.html" %}
+{% block content %}
+<h2>
+	Deseja excluir ? {{clie.nome}}
+</h2>
+<form method="POST">{% csrf_token %}
+	
+	<input type="submit" value="Excluir" class="btn btn-danger">
+</form>
+<a href="{% url 'cliente' %}" class="btn btn-warning"> Voltar</a>
+{% endblock content %}
